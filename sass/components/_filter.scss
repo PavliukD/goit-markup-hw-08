@@ -1,0 +1,39 @@
+.filter {
+  display: flex;
+  justify-content: center;
+
+  &-item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &-item__button {
+    font-family: inherit;
+    font-size: 16px;
+    color: $secondary-text-color;
+    font-weight: 500;
+    background-color: $section-secondary-background-color;
+    border-radius: 4px;
+    border: none;
+    line-height: 1.6;
+    text-align: center;
+    cursor: pointer;
+    padding: 6px 22px 6px 22px;
+    transition-property: color, background-color, box-shadow;
+    @extend %cubic;
+
+    &:hover {
+      color: $main-body-color;
+      background-color: $action-color;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    &:focus {
+      color: $main-body-color;
+      background-color: $action-color;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      outline: none;
+    }
+  }
+}

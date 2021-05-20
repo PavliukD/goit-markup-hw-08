@@ -1,0 +1,41 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  color: $primary-text-color;
+  fill: $primary-text-color;
+  transition-property: color, fill;
+  @extend %cubic;
+
+  &:last-child {
+    margin-left: 50px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: inherit;
+  }
+
+  &__icon {
+    display: block;
+    margin-right: 10px;
+  }
+}
+
+.contact-list:hover .contact-list__link,
+.contact-list:hover .contact-list__icon {
+  color: $action-color;
+  fill: $action-color;
+}
+
+.header-contacts:focus .contact-list__link,
+.header-contacts:focus .contact-list__icon {
+  color: $action-color;
+  outline: none;
+  fill: $action-color;
+}

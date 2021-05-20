@@ -1,0 +1,36 @@
+.join-us {
+  margin-left: 70px;
+  padding-top: 12px;
+
+  &__title {
+    @extend .custom-title;
+  }
+  &-social {
+    display: flex;
+    margin-top: 20px;
+
+    &-item:not(:first-child) {
+      margin-left: 10px;
+    }
+
+    &-item-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      transition-property: background-color;
+      @extend %cubic;
+
+      &__icon {
+        display: block;
+        fill: $main-body-color;
+      }
+    }
+    &-item-link:hover {
+      background-color: $action-color;
+    }
+  }
+}

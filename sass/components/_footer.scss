@@ -1,0 +1,10 @@
+.footer {
+  background-color: $hero-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-conteiner {
+    @extend .conteiner;
+    display: flex;
+  }
+}

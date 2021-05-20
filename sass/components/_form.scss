@@ -1,0 +1,65 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+  padding-top: 12px;
+
+  &__title {
+    @extend .custom-title;
+    margin-bottom: 20px;
+  }
+
+  &-group {
+    display: flex;
+
+    &__input {
+      width: 358px;
+      height: 50px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      background-color: $hero-background-color;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      line-height: 1.25;
+      padding: 15px;
+    }
+
+    &__input:focus {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  &-group-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    min-width: 200px;
+    height: 50px;
+    background-color: $action-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition-property: background-color;
+    @extend %cubic;
+
+    &__text {
+      font-size: 16px;
+      line-height: 1.87;
+      font-weight: 700;
+      color: $main-body-color;
+      letter-spacing: 0.03em;
+    }
+
+    &__icon {
+      margin-left: 10px;
+      width: 24px;
+      height: 24px;
+      fill: $main-body-color;
+    }
+  }
+
+  &-group-button:hover {
+    background-color: $button-hover-color;
+  }
+}

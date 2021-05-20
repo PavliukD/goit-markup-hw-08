@@ -1,0 +1,204 @@
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition-property: opacity, visibility;
+  @extend %cubic;
+}
+
+.modal {
+  min-width: 528px;
+  min-height: 581px;
+  max-height: 100vh;
+  background-color: $main-body-color;
+  padding: 40px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+
+  &__button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--main-body-color);
+    fill: black;
+    transition-property: fill;
+    @extend %cubic;
+
+    &:hover {
+      fill: $action-color;
+    }
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-form-item:not(:last-child) {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-form-item__name {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+    margin-bottom: 4px;
+  }
+
+  &-form-item__input {
+    width: 100%;
+    padding-left: 42px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $secondary-text-color;
+    transition-property: border;
+    @extend %cubic;
+
+    &:focus {
+      border: 1px solid #2196f3;
+      outline: none;
+    }
+  }
+
+  &-form-item__comment {
+    @extend .modal-form-item__input;
+    resize: none;
+    width: 100%;
+    height: 120px;
+    margin-top: 4px;
+    padding: 12px 16px;
+
+    &:focus,
+    :not(:placeholder-shown) {
+      color: $secondary-text-color;
+    }
+
+    &:placeholder-shown {
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+  &-form-item__icon {
+    position: absolute;
+    left: 12px;
+    bottom: 14px;
+    fill: $secondary-text-color;
+    transition-property: fill;
+    @extend %cubic;
+  }
+  &-form-checkbox {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    &__input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      position: absolute;
+    }
+
+    &__custom {
+      display: inline-block;
+      margin-right: 7px;
+      width: 16px;
+      height: 15px;
+      border: 2px solid $secondary-text-color;
+      border-radius: 2px;
+    }
+
+    &__input:checked + .modal-form-checkbox__custom {
+      background-color: $action-color;
+      background-image: url(../images/check.svg);
+      background-size: contain;
+      background-origin: border-box;
+      border-color: $action-color;
+    }
+
+    &__agreement-text {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $primary-text-color;
+    }
+    &__agreement-link {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      margin-left: 5px;
+      color: $action-color;
+      text-decoration: underline;
+    }
+  }
+
+  &-form__button-submit {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    color: $main-body-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background-color: $action-color;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    transition-property: background-color;
+    @extend %cubic;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+}
+
+.modal-form-item__input:focus + .modal-form-item__icon {
+  fill: $action-color;
+}

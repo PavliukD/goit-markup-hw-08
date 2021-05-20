@@ -1,0 +1,33 @@
+.clients {
+  @extend .section;
+  @extend .conteiner;
+
+  &-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    &-item__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 170px;
+      height: 90px;
+      border: 1px solid $social-network-color;
+      border-radius: 4px;
+      fill: $social-network-color;
+      transition-property: fill, border;
+      @extend %cubic;
+    }
+
+    &-item__link:hover {
+      border: 1px solid $action-color;
+      fill: $action-color;
+    }
+    &-item__link:focus {
+      border: 1px solid var(--action-color);
+      fill: var(--action-color);
+      outline: none;
+    }
+  }
+}
