@@ -42,16 +42,27 @@ p {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
     color: $secondary-text-color;
     text-align: center;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
     margin: 0;
+    font-size: 28px;
+    line-height: 1.17;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+    }
   }
 }
 

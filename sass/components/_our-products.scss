@@ -1,4 +1,8 @@
 .our-products {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   @extend .section;
   @extend .conteiner;
   padding-top: 0;

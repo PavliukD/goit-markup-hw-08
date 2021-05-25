@@ -1,6 +1,13 @@
 .contacts {
-  display: flex;
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .contact-list {
@@ -11,8 +18,16 @@
   transition-property: color, fill;
   @extend %cubic;
 
-  &:last-child {
-    margin-left: 50px;
+  @media screen and (max-width: 1199px) {
+    &:last-child {
+      margin-top: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:last-child {
+      margin-left: 50px;
+    }
   }
 
   &__link {

@@ -3,8 +3,14 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  &-contacts {
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+
   &-conteiner {
     @extend .conteiner;
-    display: flex;
+    // display: flex;
   }
 }

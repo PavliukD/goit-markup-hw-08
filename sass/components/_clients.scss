@@ -5,28 +5,60 @@
   &-list {
     margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -30px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90px;
+      border: 1px solid $social-network-color;
+      border-radius: 4px;
+      color: $social-network-color;
+      margin-left: 30px;
+      transition-property: color, border;
+      @extend %cubic;
+
+      @media screen and (max-width: 767px) {
+        width: calc((100% - 60px) / 2);
+      }
+
+      @media screen and (min-width: 768px) {
+        width: calc((100% - 90px) / 3);
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: calc((100% - 180px) / 6);
+      }
+
+      &:nth-child(n + 3) {
+        @media screen and (max-width: 767px) {
+          margin-top: 30px;
+        }
+      }
+      &:nth-child(n + 4) {
+        @media screen and (min-width: 767px) and (max-width: 1199px) {
+          margin-top: 30px;
+        }
+      }
+    }
 
     &-item__link {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 170px;
-      height: 90px;
-      border: 1px solid $social-network-color;
-      border-radius: 4px;
-      fill: $social-network-color;
-      transition-property: fill, border;
-      @extend %cubic;
+      color: currentColor;
+      fill: currentColor;
     }
 
-    &-item__link:hover {
+    &-item:hover {
       border: 1px solid $action-color;
-      fill: $action-color;
+      color: $action-color;
     }
-    &-item__link:focus {
-      border: 1px solid var(--action-color);
-      fill: var(--action-color);
+    &-item:focus {
+      border: 1px solid $action-color;
+      color: $action-color;
       outline: none;
     }
   }

@@ -1,6 +1,10 @@
 .join-us {
-  margin-left: 70px;
-  padding-top: 12px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-top: 60px;
+  }
+  // margin-left: 70px;
+  // padding-top: 12px;
 
   &__title {
     @extend .custom-title;
@@ -8,6 +12,10 @@
   &-social {
     display: flex;
     margin-top: 20px;
+
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
 
     &-item:not(:first-child) {
       margin-left: 10px;
