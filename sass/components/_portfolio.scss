@@ -42,6 +42,7 @@
   &-card-link-thumb {
     position: relative;
     overflow: hidden;
+    z-index: 1;
 
     &__picture {
       display: block;

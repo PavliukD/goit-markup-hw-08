@@ -1,6 +1,6 @@
 .header {
-  position: relative;
   @extend .conteiner;
+  position: relative;
   display: flex;
   align-items: center;
   padding-top: 0;
@@ -20,6 +20,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  z-index: 3;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -42,11 +43,13 @@
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
+    overflow: hidden;
     top: 0;
     left: 0;
     width: 100%;
-
     background-color: #fff;
+    overflow: hidden;
+    z-index: 2;
   }
 
   &.is-open {
