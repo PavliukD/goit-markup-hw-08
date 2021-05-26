@@ -1,12 +1,20 @@
 .contacts {
-  margin-left: auto;
-
   @media screen and (max-width: 767px) {
-    display: none;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 302px;
+    margin-left: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 84px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    margin-left: 305px;
   }
 }
 
@@ -36,9 +44,27 @@
     color: inherit;
   }
 
+  &:first-child {
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      margin-top: 32px;
+    }
+  }
+
+  &:last-child {
+    @media screen and (max-width: 767px) {
+      font-size: 34px;
+      color: $action-color;
+    }
+  }
+
   &__icon {
     display: block;
     margin-right: 10px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }
 

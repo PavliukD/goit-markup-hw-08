@@ -16,9 +16,20 @@
 }
 
 .modal {
-  min-width: 528px;
-  min-height: 581px;
-  max-height: 100vh;
+  @media screen and (max-width: 767px) {
+    width: calc(100% - 30px);
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+
   background-color: $main-body-color;
   padding: 40px;
 
@@ -160,18 +171,28 @@
     }
 
     &__agreement-text {
-      font-size: 14px;
-      line-height: 1.71;
+      font-size: 12px;
+      line-height: 1.16;
       letter-spacing: 0.03em;
       color: $primary-text-color;
+
+      @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+      }
     }
     &__agreement-link {
-      font-size: 14px;
-      line-height: 1.71;
+      font-size: 12px;
+      line-height: 1.16;
       letter-spacing: 0.03em;
       margin-left: 5px;
       color: $action-color;
       text-decoration: underline;
+
+      @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+      }
     }
   }
 

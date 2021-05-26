@@ -1,7 +1,7 @@
 .hero {
   background-color: $hero-background-color;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -13,19 +13,29 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
-  min-height: 600px;
+  // max-width: 1600px;
+  // min-height: 600px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero--title {
   color: $main-body-color;
   text-transform: uppercase;
-  font-size: 44px;
+  font-size: 26px;
   text-align: center;
-  line-height: 1.36;
+  line-height: 1.62;
   font-weight: 900;
   margin-top: 0;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero--button {

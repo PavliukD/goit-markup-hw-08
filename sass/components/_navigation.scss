@@ -1,13 +1,18 @@
 .navigation {
-  margin-left: 93px;
-
   @media screen and (max-width: 767px) {
-    display: none;
+    margin-top: 48px;
+    margin-left: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 93px;
   }
 }
 
 .navigation-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .navigation-point {
@@ -15,26 +20,46 @@
   &:not(:last-child) {
     margin-right: 50px;
   }
+  &:not(:first-child) {
+    @media screen and (max-width: 767px) {
+      margin-top: 32px;
+    }
+  }
 }
 
 %navigation-point-position {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .navigation-point__link {
   @extend %navigation-point-position;
-
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   transition-property: color;
   @extend %cubic;
+
+  @media screen and (max-width: 767px) {
+    color: #000;
+    font-size: 40px;
+    line-height: 1.18;
+  }
 
   &--action {
     @extend %navigation-point-position;
     color: $action-color;
+    @media screen and (max-width: 767px) {
+      font-size: 40px;
+      line-height: 1.18;
+    }
 
     &::after {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
       content: '';
       display: block;
       position: absolute;
@@ -49,6 +74,7 @@
       outline: none;
     }
   }
+
   &:hover {
     color: $action-color;
   }

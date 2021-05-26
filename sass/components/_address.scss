@@ -18,7 +18,7 @@
     color: $action-color;
   }
   &-list-item__link:focus {
-    color: var(--action-color);
+    color: $action-color;
     outline: none;
   }
 }

@@ -3,8 +3,18 @@
     text-align: center;
     margin-top: 60px;
   }
-  // margin-left: 70px;
-  // padding-top: 12px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 89px;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    padding-top: 12px;
+  }
 
   &__title {
     @extend .custom-title;
