@@ -1669,10 +1669,16 @@ p {
 }
 
 .modal-form-checkbox__agreement-text {
-  font-size: 12px;
-  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+@media screen and (max-width: 479px) {
+  .modal-form-checkbox__agreement-text {
+    max-width: 180px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
