@@ -1,5 +1,12 @@
 .contacts {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 200px;
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
     margin-top: 302px;
@@ -45,14 +52,24 @@
   }
 
   &:first-child {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 479px) {
+      font-size: 18px;
+      margin-top: 22px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
       font-size: 24px;
       margin-top: 32px;
     }
   }
 
   &:last-child {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 479px) {
+      font-size: 26px;
+      color: $action-color;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
       font-size: 34px;
       color: $action-color;
     }

@@ -13,6 +13,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition-property: opacity, visibility;
   @extend %cubic;
+  z-index: 3;
 }
 
 .modal {

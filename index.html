@@ -13,46 +13,48 @@
 </head>
 <body>
     <header class="header">
+        <div class="conteiner">
             <a lang="en" href="./" class="logo">Web<span class="logo--black">Studio</span></a>
-        <div class="menu-container" id="menu-container" data-menu>
-            <nav class="navigation">
-                <ul class="navigation-list">
-                    <li class="navigation-point"><a href="./" class="navigation-point__link--action">Студия</a></li>
-                    <li class="navigation-point"><a href="./portfolio.html" class="navigation-point__link">Портфолио</a></li>
-                    <li class="navigation-point"><a href="" class="navigation-point__link">Контакты</a></li>
+            <div class="menu-container" id="menu-container" data-menu>
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-point"><a href="./" class="navigation-point__link--action">Студия</a></li>
+                        <li class="navigation-point"><a href="./portfolio.html" class="navigation-point__link">Портфолио</a></li>
+                        <li class="navigation-point"><a href="" class="navigation-point__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
+                    <li class="contact-list">
+                        <a href="mailto:info@devstudio.com" class="contact-list__link">
+                            <svg width="16" height="12" class="contact-list__icon">
+                                <use href="./images/icons.svg#icon-mail-icon"></use>
+                            </svg>
+                            <span>info@devstudio.com</span>
+                        </a>
+                    </li>
+                    <li class="contact-list">
+                        <a href="tel:+380961111111" class="contact-list__link">
+                            <svg width="10" height="16" class="contact-list__icon">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            <span>+38 096 111 11 11</span>
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="contacts">
-                <li class="contact-list">
-                    <a href="mailto:info@devstudio.com" class="contact-list__link">
-                        <svg width="16" height="12" class="contact-list__icon">
-                            <use href="./images/icons.svg#icon-mail-icon"></use>
-                        </svg>
-                        <span>info@devstudio.com</span>
-                    </a>
-                </li>
-                <li class="contact-list">
-                    <a href="tel:+380961111111" class="contact-list__link">
-                        <svg width="10" height="16" class="contact-list__icon">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        <span>+38 096 111 11 11</span>
-                    </a>
-                </li>
-            </ul>
-            <ul class="menu-social">
-                <li class="menu-social-item"><a href="" class="menu-social-item__link">Instagram</a></li>
-                <li class="menu-social-item"><a href="" class="menu-social-item__link">Twitter</a></li>
-                <li class="menu-social-item"><a href="" class="menu-social-item__link">Facebook</a></li>
-                <li class="menu-social-item"><a href="" class="menu-social-item__link">LinkedIn</a></li>
-            </ul>
-        </div>
+                <ul class="menu-social">
+                    <li class="menu-social-item"><a href="" class="menu-social-item__link">Instagram</a></li>
+                    <li class="menu-social-item"><a href="" class="menu-social-item__link">Twitter</a></li>
+                    <li class="menu-social-item"><a href="" class="menu-social-item__link">Facebook</a></li>
+                    <li class="menu-social-item"><a href="" class="menu-social-item__link">LinkedIn</a></li>
+                </ul>
+            </div>
             <button type="button" class="menu-button is-open" data-menu-button>
-                <svg  width="24" height="16" aria-label="Переключатель мобильного меню">
+                <svg width="24" height="16" aria-label="Переключатель мобильного меню">
                     <use class="icon-menu" href="./images/icons.svg#icon-cross"></use>
                     <use class="icon-cross" href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
+        </div>
 
     </header>
 
@@ -63,6 +65,7 @@
         </section>
 
         <section class="features"> 
+            <div class="conteiner">
                 <h2 class="hidden">Наши преимущества</h2>
                 <ul class="features-list">
                     <li class="features-list-item">
@@ -72,7 +75,8 @@
                             </svg>
                         </div>
                         <h3 class="features-list-item__title">Внимание к деталям</h3>
-                        <p class="features-list-item__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        <p class="features-list-item__text">Идейные соображения, а также начало повседневной работы по формированию
+                            позиции.</p>
                     </li>
                     <li class="features-list-item">
                         <div class="features-list-item__picture">
@@ -81,7 +85,8 @@
                             </svg>
                         </div>
                         <h3 class="features-list-item__title">Пунктуальность</h3>
-                        <p class="features-list-item__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        <p class="features-list-item__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
+                            собой.</p>
                     </li>
                     <li class="features-list-item">
                         <div class="features-list-item__picture">
@@ -90,7 +95,8 @@
                             </svg>
                         </div>
                         <h3 class="features-list-item__title">Планирование</h3>
-                        <p class="features-list-item__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        <p class="features-list-item__text">Равным образом консультация с широким активом в значительной степени
+                            обуславливает.</p>
                     </li>
                     <li class="features-list-item">
                         <div class="features-list-item__picture">
@@ -99,12 +105,15 @@
                             </svg>
                         </div>
                         <h3 class="features-list-item__title">Современные технологии</h3>
-                        <p class="features-list-item__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <p class="features-list-item__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        </p>
                     </li>
                 </ul>
+            </div>
         </section>
 
         <section class="our-products">
+            <div class="conteiner">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="our-products-list">
                     <li class="our-products-list-item">
@@ -112,18 +121,20 @@
                             <source
                                 srcset="./images/gallery/desktop/what-we-do/box1.webp 1x, ./images/gallery/desktop/what-we-do/box1@2x.webp 2x"
                                 media="(min-width:1200px)" type="image/webp" />
-                            <source srcset="./images/gallery/desktop/what-we-do/box1.jpg 1x, ./images/gallery/desktop/what-we-do/box1@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/desktop/what-we-do/box1.jpg 1x, ./images/gallery/desktop/what-we-do/box1@2x.jpg 2x"
                                 media="(min-width:1200px)" type="image/jpeg" />
                             <img src="./images/gallery/desktop/what-we-do/box1.jpg" alt="Десктопные приложения" width="370" />
                         </picture>
                         <p class="our-products-list-item__text">Десктопные приложения</p>
-                    </li> 
+                    </li>
                     <li class="our-products-list-item">
                         <picture class="our-products-list-item__image">
                             <source
                                 srcset="./images/gallery/desktop/what-we-do/box2.webp 1x, ./images/gallery/desktop/what-we-do/box2@2x.webp 2x"
                                 media="(min-width:1200px)" type="image/webp" />
-                            <source srcset="./images/gallery/desktop/what-we-do/box2.jpg 1x, ./images/gallery/desktop/what-we-do/box2@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/desktop/what-we-do/box2.jpg 1x, ./images/gallery/desktop/what-we-do/box2@2x.jpg 2x"
                                 media="(min-width:1200px)" type="image/jpeg" />
                             <img src="./images/gallery/desktop/what-we-do/box2.jpg" alt="Мобильные приложения" width="370" />
                         </picture>
@@ -134,36 +145,46 @@
                             <source
                                 srcset="./images/gallery/desktop/what-we-do/box3.webp 1x, ./images/gallery/desktop/what-we-do/box3@2x.webp 2x"
                                 media="(min-width:1200px)" type="image/webp" />
-                            <source srcset="./images/gallery/desktop/what-we-do/box3.jpg 1x, ./images/gallery/desktop/what-we-do/box3@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/desktop/what-we-do/box3.jpg 1x, ./images/gallery/desktop/what-we-do/box3@2x.jpg 2x"
                                 media="(min-width:1200px)" type="image/jpeg" />
                             <img src="./images/gallery/desktop/what-we-do/box3.jpg" alt="Дизайнерские решения" width="370" />
                         </picture>
                         <p class="our-products-list-item__text">Дизайнерские решения</p>
                     </li>
                 </ul>
+            </div>
         </section>
 
         <section class="our-team">
+            <div class="conteiner">
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="our-team-list">
                     <li class="our-team-list-item">
                         <picture class="our-team-list-item__photo">
-                            <source srcset="./images/gallery/desktop/team/ourteam-1.webp 1x, ./images/gallery/desktop/team/ourteam-1@2x.webp 2x"
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-1.webp 1x, ./images/gallery/desktop/team/ourteam-1@2x.webp 2x"
                                 media="(min-width:1200px)" type="image/webp" />
-                            <source srcset="./images/gallery/desktop/team/ourteam-1.jpg 1x, ./images/gallery/desktop/team/ourteam-1@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-1.jpg 1x, ./images/gallery/desktop/team/ourteam-1@2x.jpg 2x"
                                 media="(min-width:1200px)" type="image/jpeg" />
-                        
-                            <source srcset="./images/gallery/tablet/team/ourteam-1.webp 1x, ./images/gallery/tablet/team/ourteam-1@2x.webp 2x"
+                
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-1.webp 1x, ./images/gallery/tablet/team/ourteam-1@2x.webp 2x"
                                 media="(min-width:768px)" type="image/webp" />
-                            <source srcset="./images/gallery/tablet/team/ourteam-1.jpg 1x, ./images/gallery/tablet/team/ourteam-1@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-1.jpg 1x, ./images/gallery/tablet/team/ourteam-1@2x.jpg 2x"
                                 media="(min-width:768px)" type="image/jpeg" />
-                        
-                            <source srcset="./images/gallery/mobile/team/ourteam-1.webp 1x, ./images/gallery/mobile/team/ourteam-1@2x.webp 2x"
+                
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-1.webp 1x, ./images/gallery/mobile/team/ourteam-1@2x.webp 2x"
                                 media="(max-width:767.98px)" type="image/webp" />
-                            <source srcset="./images/gallery/mobile/team/ourteam-1.jpg 1x, ./images/gallery/mobile/team/ourteam-1@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-1.jpg 1x, ./images/gallery/mobile/team/ourteam-1@2x.jpg 2x"
                                 media="(max-width:767.98px)" type="image/jpeg" />
-                        
-                            <img src="./images/gallery/mobile/team/ourteam-1.jpg" alt="Фото Игоря Демьяненко" width="270" class="our-team-list-item__photo"/>
+                
+                            <img src="./images/gallery/mobile/team/ourteam-1.jpg" alt="Фото Игоря Демьяненко" width="270"
+                                class="our-team-list-item__photo" />
                         </picture>
                         <div class="our-team-list-item-meta">
                             <h3 class="our-team-list-item-meta__name">Игорь Демьяненко</h3>
@@ -173,7 +194,7 @@
                                     <a href="" class="social-item-link">
                                         <svg width="20" height="20" class="social-item-link__icon">
                                             <use href="./images/icons.svg#icon-intagram"></use>
-                                         </svg>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="social-item">
@@ -199,28 +220,35 @@
                                 </li>
                             </ul>
                         </div>
-                        
+                
                     </li>
                     <li class="our-team-list-item">
-                        <picture class="our-team-list-item__photo"> 
-                            <source srcset="./images/gallery/desktop/team/ourteam-2.webp 1x, ./images/gallery/desktop/team/ourteam-2@2x.webp 2x"
+                        <picture class="our-team-list-item__photo">
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-2.webp 1x, ./images/gallery/desktop/team/ourteam-2@2x.webp 2x"
                                 media="(min-width:1200px)" type="image/webp" />
-                            <source srcset="./images/gallery/desktop/team/ourteam-2.jpg 1x, ./images/gallery/desktop/team/ourteam-2@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-2.jpg 1x, ./images/gallery/desktop/team/ourteam-2@2x.jpg 2x"
                                 media="(min-width:1200px)" type="image/jpeg" />
-                        
-                            <source srcset="./images/gallery/tablet/team/ourteam-2.webp 1x, ./images/gallery/tablet/team/ourteam-2@2x.webp 2x"
+                
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-2.webp 1x, ./images/gallery/tablet/team/ourteam-2@2x.webp 2x"
                                 media="(min-width:768px)" type="image/webp" />
-                            <source srcset="./images/gallery/tablet/team/ourteam-2.jpg 1x, ./images/gallery/tablet/team/ourteam-2@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-2.jpg 1x, ./images/gallery/tablet/team/ourteam-2@2x.jpg 2x"
                                 media="(min-width:768px)" type="image/jpeg" />
-                        
-                            <source srcset="./images/gallery/mobile/team/ourteam-2.webp 1x, ./images/gallery/mobile/team/ourteam-2@2x.webp 2x"
+                
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-2.webp 1x, ./images/gallery/mobile/team/ourteam-2@2x.webp 2x"
                                 media="(max-width:767.98px)" type="image/webp" />
-                            <source srcset="./images/gallery/mobile/team/ourteam-2.jpg 1x, ./images/gallery/mobile/team/ourteam-2@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-2.jpg 1x, ./images/gallery/mobile/team/ourteam-2@2x.jpg 2x"
                                 media="(max-width:767.98px)" type="image/jpeg" />
-                        
-                            <img src="./images/gallery/mobile/team/ourteam-2.jpg" alt="Фото Ольги Репиной" width="270" class="our-team-list-item__photo"/>
+                
+                            <img src="./images/gallery/mobile/team/ourteam-2.jpg" alt="Фото Ольги Репиной" width="270"
+                                class="our-team-list-item__photo" />
                         </picture>
-                        <div class="our-team-list-item-meta">                            
+                        <div class="our-team-list-item-meta">
                             <h3 class="our-team-list-item-meta__name">Ольга Репина</h3>
                             <p lang="en" class="our-team-list-item-meta__profession">Frontend Developer</p>
                             <ul class="social">
@@ -254,26 +282,33 @@
                                 </li>
                             </ul>
                         </div>
-                      
+                
                     </li>
                     <li class="our-team-list-item">
                         <picture class="our-team-list-item__photo">
-                            <source srcset="./images/gallery/desktop/team/ourteam-3.webp 1x, ./images/gallery/desktop/team/ourteam-3@2x.webp 2x"
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-3.webp 1x, ./images/gallery/desktop/team/ourteam-3@2x.webp 2x"
                                 media="(min-width:1200px)" type="image/webp" />
-                            <source srcset="./images/gallery/desktop/team/ourteam-3.jpg 1x, ./images/gallery/desktop/team/ourteam-3@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-3.jpg 1x, ./images/gallery/desktop/team/ourteam-3@2x.jpg 2x"
                                 media="(min-width:1200px)" type="image/jpeg" />
-                        
-                            <source srcset="./images/gallery/tablet/team/ourteam-3.webp 1x, ./images/gallery/tablet/team/ourteam-3@2x.webp 2x"
+                
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-3.webp 1x, ./images/gallery/tablet/team/ourteam-3@2x.webp 2x"
                                 media="(min-width:768px)" type="image/webp" />
-                            <source srcset="./images/gallery/tablet/team/ourteam-3.jpg 1x, ./images/gallery/tablet/team/ourteam-3@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-3.jpg 1x, ./images/gallery/tablet/team/ourteam-3@2x.jpg 2x"
                                 media="(min-width:768px)" type="image/jpeg" />
-                        
-                            <source srcset="./images/gallery/mobile/team/ourteam-3.webp 1x, ./images/gallery/mobile/team/ourteam-3@2x.webp 2x"
+                
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-3.webp 1x, ./images/gallery/mobile/team/ourteam-3@2x.webp 2x"
                                 media="(max-width:767.98px)" type="image/webp" />
-                            <source srcset="./images/gallery/mobile/team/ourteam-3.jpg 1x, ./images/gallery/mobile/team/ourteam-3@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-3.jpg 1x, ./images/gallery/mobile/team/ourteam-3@2x.jpg 2x"
                                 media="(max-width:767.98px)" type="image/jpeg" />
-                        
-                            <img src="./images/gallery/mobile/team/ourteam-3.jpg" alt="Фото Николая Тарасова" width="270" class="our-team-list-item__photo"/>
+                
+                            <img src="./images/gallery/mobile/team/ourteam-3.jpg" alt="Фото Николая Тарасова" width="270"
+                                class="our-team-list-item__photo" />
                         </picture>
                         <div class="our-team-list-item-meta">
                             <h3 class="our-team-list-item-meta__name">Николай Тарасов</h3>
@@ -309,26 +344,33 @@
                                 </li>
                             </ul>
                         </div>
-                        
+                
                     </li>
                     <li class="our-team-list-item">
                         <picture class="our-team-list-item__photo">
-                            <source srcset="./images/gallery/desktop/team/ourteam-4.webp 1x, ./images/gallery/desktop/team/ourteam-4@2x.webp 2x"
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-4.webp 1x, ./images/gallery/desktop/team/ourteam-4@2x.webp 2x"
                                 media="(min-width:1200px)" type="image/webp" />
-                            <source srcset="./images/gallery/desktop/team/ourteam-4.jpg 1x, ./images/gallery/desktop/team/ourteam-4@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/desktop/team/ourteam-4.jpg 1x, ./images/gallery/desktop/team/ourteam-4@2x.jpg 2x"
                                 media="(min-width:1200px)" type="image/jpeg" />
-                        
-                            <source srcset="./images/gallery/tablet/team/ourteam-4.webp 1x, ./images/gallery/tablet/team/ourteam-4@2x.webp 2x"
+                
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-4.webp 1x, ./images/gallery/tablet/team/ourteam-4@2x.webp 2x"
                                 media="(min-width:768px)" type="image/webp" />
-                            <source srcset="./images/gallery/tablet/team/ourteam-4.jpg 1x, ./images/gallery/tablet/team/ourteam-4@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/tablet/team/ourteam-4.jpg 1x, ./images/gallery/tablet/team/ourteam-4@2x.jpg 2x"
                                 media="(min-width:768px)" type="image/jpeg" />
-                        
-                            <source srcset="./images/gallery/mobile/team/ourteam-4.webp 1x, ./images/gallery/mobile/team/ourteam-4@2x.webp 2x"
+                
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-4.webp 1x, ./images/gallery/mobile/team/ourteam-4@2x.webp 2x"
                                 media="(max-width:767.98px)" type="image/webp" />
-                            <source srcset="./images/gallery/mobile/team/ourteam-4.jpg 1x, ./images/gallery/mobile/team/ourteam-4@2x.jpg 2x"
+                            <source
+                                srcset="./images/gallery/mobile/team/ourteam-4.jpg 1x, ./images/gallery/mobile/team/ourteam-4@2x.jpg 2x"
                                 media="(max-width:767.98px)" type="image/jpeg" />
-                        
-                            <img src="./images/gallery/mobile/team/ourteam-4.jpg" alt="Фото Михаила Ермакова" width="270" class="our-team-list-item__photo"/>
+                
+                            <img src="./images/gallery/mobile/team/ourteam-4.jpg" alt="Фото Михаила Ермакова" width="270"
+                                class="our-team-list-item__photo" />
                         </picture>
                         <div class="our-team-list-item-meta">
                             <h3 class="our-team-list-item-meta__name">Михаил Ермаков</h3>
@@ -364,13 +406,14 @@
                                 </li>
                             </ul>
                         </div>
-                        
+                
                     </li>
                 </ul>
-
+            </div>
         </section>
 
         <section class="clients">
+            <div class="conteiner">
                 <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="clients-list">
                     <li class="clients-list-item">
@@ -416,66 +459,73 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-conteiner">
-            <div class="footer-contacts">
-                <a lang="en" href="./" class="logo">Web<span class="logo--white">Studio</span></a>
-                <address class="address">
-                    <p>г. Киев, пр-т Леси Украинки, 26</p> 
-                    <ul class="address-list">
-                        <li class="address-list-item"><a href="mailto:info@example.com" class="address-list-item__link">info@example.com</a></li>
-                        <li class="address-list-item"><a href="tel:+380991111111" class="address-list-item__link">+38 099 111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
-            <div class="join-us">
-                <h3 class="join-us__title">Присоединяйтесь</h3>
-                        <ul class="join-us-social">
-                            <li class="join-us-social-item">
-                                <a href="" class="join-us-social-item-link">
-                                    <svg width="20" height="20" class="join-us-social-item-link__icon">
-                                        <use href="./images/icons.svg#icon-intagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="join-us-social-item">
-                                <a href="" class="join-us-social-item-link">
-                                    <svg width="20" height="20" class="join-us-social-item-link__icon">
-                                        <use href="./images/icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="join-us-social-item">
-                                <a href="" class="join-us-social-item-link">
-                                    <svg width="20" height="20" class="join-us-social-item-link__icon">
-                                        <use href="./images/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="join-us-social-item">
-                                <a href="" class="join-us-social-item-link">
-                                    <svg width="20" height="20" class="join-us-social-item-link__icon">
-                                        <use href="./images/icons.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
+        <div class="conteiner">
+            <div class="footer-conteiner">
+                <div class="footer-contacts">
+                    <a lang="en" href="./" class="logo">Web<span class="logo--white">Studio</span></a>
+                    <address class="address">
+                        <p>г. Киев, пр-т Леси Украинки, 26</p>
+                        <ul class="address-list">
+                            <li class="address-list-item"><a href="mailto:info@example.com"
+                                    class="address-list-item__link">info@example.com</a></li>
+                            <li class="address-list-item"><a href="tel:+380991111111" class="address-list-item__link">+38 099 111 11
+                                    11</a></li>
                         </ul>
-            </div>
-            <form class="form">
-                <label for="mail" class="form__title">Подпишитесь на рассылку</label>
-                <div class="form-group">
-                    <input type="email" name="mail" id="mail" class="form-group__input" placeholder="E-mail">
-                    <button type="submit" class="form-group-button"><span class="form-group-button__text">Подписаться</span> 
-                        <svg class="form-group-button__icon">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
+                    </address>
                 </div>
-            </form>
+                <div class="join-us">
+                    <h3 class="join-us__title">Присоединяйтесь</h3>
+                    <ul class="join-us-social">
+                        <li class="join-us-social-item">
+                            <a href="" class="join-us-social-item-link">
+                                <svg width="20" height="20" class="join-us-social-item-link__icon">
+                                    <use href="./images/icons.svg#icon-intagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-us-social-item">
+                            <a href="" class="join-us-social-item-link">
+                                <svg width="20" height="20" class="join-us-social-item-link__icon">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-us-social-item">
+                            <a href="" class="join-us-social-item-link">
+                                <svg width="20" height="20" class="join-us-social-item-link__icon">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-us-social-item">
+                            <a href="" class="join-us-social-item-link">
+                                <svg width="20" height="20" class="join-us-social-item-link__icon">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="form">
+                    <label for="mail" class="form__title">Подпишитесь на рассылку</label>
+                    <div class="form-group">
+                        <input type="email" name="mail" id="mail" class="form-group__input" placeholder="E-mail">
+                        <button type="submit" class="form-group-button"><span class="form-group-button__text">Подписаться</span>
+                            <svg class="form-group-button__icon">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
+
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">

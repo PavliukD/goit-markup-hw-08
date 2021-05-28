@@ -1,5 +1,4 @@
 .portfolio {
-  @extend .conteiner;
   @extend .section;
 
   &-exsamples {
@@ -56,18 +55,39 @@
       content: '';
       width: 100%;
       height: 100%;
-      padding-top: 63px;
-      padding-bottom: 63px;
-      padding-left: 24px;
-      padding-right: 24px;
       background-color: rgba(33, 150, 243, 0.9);
       color: $main-body-color;
-      font-size: 18px;
       line-height: 1.55;
       letter-spacing: 0.03em;
       transform: translateY(100%);
       transition-property: transform;
       @extend %cubic;
+
+      @media screen and (max-width: 479px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 14px;
+      }
+
+      @media screen and (min-width: 480px) {
+        padding-top: 77px;
+        padding-bottom: 77px;
+        padding-left: 24px;
+        padding-right: 24px;
+        font-size: 18px;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding-top: 49px;
+        padding-bottom: 49px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        padding-top: 63px;
+        padding-bottom: 63px;
+      }
     }
   }
 
